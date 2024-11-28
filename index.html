@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaurav Pale - Resume</title>
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -37,19 +35,17 @@
         }
 
         .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
+            margin-top: 15px;
+            font-size: 14px;
         }
 
         .contact-info ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            font-size: 14px;
+            justify-content: center;
+            gap: 20px;
         }
 
         .contact-info li {
@@ -69,9 +65,9 @@
 
         .container {
             display: flex;
-            flex-direction: column;
-            margin: 20px;
+            flex-wrap: wrap;
             gap: 20px;
+            padding: 20px;
         }
 
         .left-column,
@@ -79,15 +75,7 @@
             background-color: #1a1a1a;
             padding: 20px;
             border-radius: 10px;
-        }
-
-        .left-column {
-            margin-bottom: 20px;
-        }
-
-        .left-column,
-        .right-column {
-            width: 100%;
+            flex: 1;
         }
 
         h2 {
@@ -95,28 +83,6 @@
             padding-bottom: 5px;
             margin-bottom: 20px;
             font-size: 24px;
-        }
-
-        .experience-item,
-        .education-item,
-        .project-item,
-        .skills-item,
-        .certification-item {
-            margin-bottom: 20px;
-        }
-
-        .experience-item h3,
-        .education-item h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #03a9f4;
-        }
-
-        .experience-item p,
-        .education-item p,
-        .project-item p {
-            margin: 5px 0;
-            color: #cccccc;
         }
 
         ul {
@@ -137,39 +103,9 @@
             color: #cccccc;
         }
 
-        @media (min-width: 600px) {
+        @media (max-width: 768px) {
             .container {
-                flex-direction: row;
-                gap: 20px;
-            }
-
-            .left-column,
-            .right-column {
-                flex: 1;
-                min-width: 300px;
-            }
-
-            header h1 {
-                font-size: 42px;
-            }
-
-            header p {
-                font-size: 18px;
-            }
-
-            .contact-info ul {
-                flex-direction: row;
-                gap: 15px;
-                font-size: 16px;
-            }
-
-            h2 {
-                font-size: 28px;
-            }
-
-            .experience-item h3,
-            .education-item h3 {
-                font-size: 20px;
+                flex-direction: column;
             }
         }
     </style>
@@ -181,7 +117,7 @@
         <p>AI, Data Science, and Machine Learning Enthusiast committed to driving innovation and delivering impactful solutions.</p>
         <div class="contact-info">
             <ul>
-                <li><i class="fas fa-phone-alt"></i>8767786455</li>
+                <li><i class="fas fa-phone-alt"></i> 8767786455</li>
                 <li><i class="fas fa-envelope"></i> <a href="mailto:gauravpale@1741@gmail.com">gauravpale@1741@gmail.com</a></li>
                 <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gauravpale" target="_blank">LinkedIn</a></li>
                 <li><i class="fab fa-github"></i> <a href="https://github.com/GauravPale" target="_blank">GitHub</a></li>
@@ -191,79 +127,52 @@
 
     <div class="container">
         <div class="left-column">
-            <!--  <section id="experience">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <h3>Python Developer and Trainer</h3>
-                    <p><strong>Campus Credentials Pvt. Ltd. (Oct 2023 - Present)</strong></p>
-                    <ul>
-                        <li>Designed engaging lessons and hands-on activities for Python training.</li>
-                        <li>Monitored student progress through quizzes and projects, providing feedback for improvement.</li>
-                        <li>Kept up-to-date with Python developments to ensure relevant teaching content.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Data Science and analysis virtual internship Internship</h3>
-                    <p><strong>Netzwerk Academy (April 2023 - Sep 2023)</strong></p>
-                    <ul>
-                        <li>Completed a 24-week AI-ML Virtual Internship with an Excellent grade.</li>
-                        <li>Proficient in Mathematics, Python, and various data science libraries; skilled in Machine Learning techniques and SQL.</li>
-                        <li>Worked on image classification and object detection projects.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Developer virtual experience program</h3>
-                    <p><strong>Accenture (may 2022 -sep 2022)</strong></p>
-                    <ul>
-                        <li>Completed a Developer Virtual Experience Program where I worked on industry-relevant projects, simulating real-world scenarios.        </li>
-                         <li>Gained practical experience in software development, including coding, debugging, and testing applications.</li>
-                
-                        <li>Developed a Movie Recommendation System as an internship project.</li>
-                    </ul>
-                </div>
-          </section>-->
+            <section id="skills">
+                <h2>Skills and Abilities</h2>
+                <ul>
+                    <li>Python Programming: Java-Script</li>
+                    <li>Data Structures and Algorithms (DSA)</li>
+                    <li>Database: MySQL, MongoDB</li>
+                    <li>Data Science and Analytics: Excel, PowerBI</li>
+                    <li>Front end: HTML, CSS, React</li>
+                    <li>Back end: Django</li>
+                    <li>Version Control: Git</li>
+                    <li>Server and Deployment: Docker, AWS</li>
+                    <li>Leadership, Communication, Team Collaboration, Adaptability</li>
+                </ul>
+            </section>
 
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English, Hindi, Marathi</li>
+                </ul>
+            </section>
+        </div>
 
-           
+        <div class="right-column">
             <section id="education">
                 <h2>Education</h2>
                 <div class="education-item">
-          
-                <div class="education-item">
                     <h3>B-Tech Computer Engineering</h3>
-                    <p><strong>St. John College of Engineering and Management (SJCEM)  (2021-2025)</strong></p>
-                    
+                    <p><strong>St. John College of Engineering and Management (2021-2025)</strong></p>
                     <p>CGPA: 8.5</p>
-               <!-- </div>
-
-                <div class="education-item">
-                    <h3>SSC</h3>
-                    <p><strong>Swami Vivekanand Vidyalaya, Bhokardan</strong></p>
-                    <p><strong>State board of maharashtra (2017-2018)</strong></p>
-                    <p>Percentage Score:93.40%</p>
-                    <p>Completion Year: 2018</p>
                 </div>
             </section>
-        </div>-->
-          
-          
-           
+
             <section id="projects">
                 <h2>Projects</h2>
                 <div class="project-item">
-                    <h3><strong> Create a Lead Generation Messenger Chatbot using
- Chatfuel</strong></h3>
-                    <p>A Chatfuel-powered chatbot designed for car dealerships, enabling users to book test drives, schedule car bookings, and receive personalized car exchange offers. It engages users through a seamless conversational interface, enhancing lead generation and customer experience.</p>
-                <!--<p><a href="https://satyajeet1718.github.io/Portfolio/movie_recommendation.html" target="_blank">Link</a></p>-->
+                    <h3>Create a Lead Generation Messenger Chatbot using Chatfuel</h3>
+                    <p>Designed a chatbot for car dealerships to enhance lead generation and customer engagement.</p>
                 </div>
                 <div class="project-item">
-                    <h3><strong>vaccine website </strong></h3>
-                    <p>A Vaccine Booking Website lets users register, schedule appointments, and receive confirmations and reminders. Admins manage appointment slots and vaccine centers. It uses technologies like React, Node.js/Python, and Firebase/MySQL for efficient management.</p>
-                   <!-- <p><a href="https://satyajeet1718.github.io/Portfolio/Multi-language_text_summerizer.html" target="_blank">Link</a></p>-->
+                    <h3>Vaccine Website</h3>
+                    <p>Developed a vaccine booking system using React and Firebase for efficient management.</p>
                 </div>
                 <div class="project-item">
-                    <h3><strong>A Surveillance Robot</strong></h3>
-                    <p>A Surveillance Robot is a robotic system designed for monitoring and security purposes. It uses cameras, sensors, detect movement, and capture real-time footage. It can be remotely controlled or operate autonomously, providing security, surveillance, and environmental monitoring in various settings.</p>
+                    <h3>Surveillance Robot</h3>
+                    <p>Designed a robot for real-time monitoring, integrating cameras and sensors.</p>
                 </div>
             </section>
 
@@ -271,37 +180,8 @@
                 <h2>Certified Courses</h2>
                 <ul>
                     <li>Python (Beginner)</li>
-                   <!-- <li>AI with Python</li>
-                    <li>TensorFlow Python</li>
-                    <li>Statistics for Data Science</li>
-                    <li>Data Visualization using Python</li>-->
                     <li>Product Management</li>
                     <li>Leadership and Management</li>
-                </ul>
-            </section>
-
-            <section id="skills">
-                <h2>Skills and Abilities</h2>
-                <ul>
-                    <li>Python Programming: Java-Script</li>
-                    <li>Data Structures and Algorithms (DSA)</li>
-                    <li>Database: MySQL,MongoDB</li>
-                    <li>Data Science and Data analytics 
-                      :Excel,Powerbi</li>
-                    <li>Front end : Html,Css,React</li>
-                    <li>Back end :Django</li>
-                    <li>Version Control:Git</li>
-                    <li>Server and Deployment: Docker,AWS</li>
-                    <li>Leadershi,Communication,Team Collaboration,Adaptability</li>
-    
-                </ul>
-            </section>
-
-            <section id="languages">
-                <h2>Languages</h2>
-                
-                <ul>
-                    <li>English, Hindi, Marathi</li>
                 </ul>
             </section>
         </div>
@@ -310,8 +190,6 @@
     <footer>
         <p>©2024 Gaurav Pale. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
-                
